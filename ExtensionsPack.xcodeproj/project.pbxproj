@@ -11,7 +11,6 @@
 		6D506D6D2045C5770011CB4B /* ExtensionsPackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D6C2045C5770011CB4B /* ExtensionsPackTests.swift */; };
 		6D506D6F2045C5770011CB4B /* ExtensionsPack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D506D612045C5770011CB4B /* ExtensionsPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D506D8F2045C5AA0011CB4B /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D792045C5A80011CB4B /* Decimal.swift */; };
-		6D506D902045C5AA0011CB4B /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D7A2045C5A80011CB4B /* Random.swift */; };
 		6D506D912045C5AA0011CB4B /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D7B2045C5A80011CB4B /* UIDevice.swift */; };
 		6D506D922045C5AA0011CB4B /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D7C2045C5A80011CB4B /* UILabel.swift */; };
 		6D506D942045C5AA0011CB4B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D7E2045C5A80011CB4B /* Data.swift */; };
@@ -43,7 +42,6 @@
 		6D506D6C2045C5770011CB4B /* ExtensionsPackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsPackTests.swift; sourceTree = "<group>"; };
 		6D506D6E2045C5770011CB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D506D792045C5A80011CB4B /* Decimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
-		6D506D7A2045C5A80011CB4B /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		6D506D7B2045C5A80011CB4B /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		6D506D7C2045C5A80011CB4B /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		6D506D7E2045C5A80011CB4B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 				6D506D7F2045C5A80011CB4B /* Formatter.swift */,
 				6D506D812045C5A90011CB4B /* Mirror.swift */,
 				6D506D822045C5A90011CB4B /* NSObject.swift */,
-				6D506D7A2045C5A80011CB4B /* Random.swift */,
 				6D506DA42045C8120011CB4B /* String.swift */,
 				6D506D892045C5A90011CB4B /* UIApplication.swift */,
 				6D506D7B2045C5A80011CB4B /* UIDevice.swift */,
@@ -243,7 +240,6 @@
 				6D506D982045C5AA0011CB4B /* NSObject.swift in Sources */,
 				6D506D922045C5AA0011CB4B /* UILabel.swift in Sources */,
 				6D506D8F2045C5AA0011CB4B /* Decimal.swift in Sources */,
-				6D506D902045C5AA0011CB4B /* Random.swift in Sources */,
 				6D506D972045C5AA0011CB4B /* Mirror.swift in Sources */,
 				6D506D9D2045C5AA0011CB4B /* UUID.swift in Sources */,
 				6D506D952045C5AA0011CB4B /* Formatter.swift in Sources */,

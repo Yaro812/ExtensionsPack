@@ -9,7 +9,7 @@ Extensions for Swift and UIKit that i find useful
                        DESC
 
   s.homepage         = 'https://github.com/yaro812/ExtensionsPack'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author           = { 'Thorax' => 'thorax@me.com' }
   s.source           = { :git => 'https://github.com/yaro812/ExtensionsPack.git', :tag => s.version.to_s }
 

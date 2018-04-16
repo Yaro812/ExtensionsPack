@@ -14,7 +14,7 @@ Extensions for Swift and UIKit that i find useful
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.source           = { :git => 'https://github.com/yaro812/ExtensionsPack.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.3'
+  s.ios.deployment_target = '10.0'
   s.source_files = 'ExtensionsPack/*.swift'
 
 end

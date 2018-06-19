@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ExtensionsPack'
-  s.swift_version    = '4.0'
-  s.version          = '1.0.4'
+  s.swift_version    = '4.1'
+  s.version          = '1.0.5'
   s.summary          = 'Various handy Swift extensions'
 
   s.description      = <<-DESC

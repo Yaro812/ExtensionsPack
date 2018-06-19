@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D43291320D909060015C369 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43291220D909060015C369 /* JSONDecoder.swift */; };
+		6D43291520D90C770015C369 /* JSONDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43291420D90C770015C369 /* JSONDecoderTests.swift */; };
 		6D506D682045C5770011CB4B /* ExtensionsPack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D506D5E2045C5770011CB4B /* ExtensionsPack.framework */; };
 		6D506D6D2045C5770011CB4B /* ExtensionsPackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D6C2045C5770011CB4B /* ExtensionsPackTests.swift */; };
 		6D506D6F2045C5770011CB4B /* ExtensionsPack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D506D612045C5770011CB4B /* ExtensionsPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D43291220D909060015C369 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		6D43291420D90C770015C369 /* JSONDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderTests.swift; sourceTree = "<group>"; };
 		6D506D5E2045C5770011CB4B /* ExtensionsPack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionsPack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D506D612045C5770011CB4B /* ExtensionsPack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionsPack.h; sourceTree = "<group>"; };
 		6D506D622045C5770011CB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				6D506D7C2045C5A80011CB4B /* UILabel.swift */,
 				6D506D8D2045C5AA0011CB4B /* UIView.swift */,
 				6D506D872045C5A90011CB4B /* UUID.swift */,
+				6D43291220D909060015C369 /* JSONDecoder.swift */,
 			);
 			path = ExtensionsPack;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				6D506D6C2045C5770011CB4B /* ExtensionsPackTests.swift */,
 				6D506D6E2045C5770011CB4B /* Info.plist */,
+				6D43291420D90C770015C369 /* JSONDecoderTests.swift */,
 			);
 			path = ExtensionsPackTests;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 				6D506D942045C5AA0011CB4B /* Data.swift in Sources */,
 				6D506DA32045C5AA0011CB4B /* UIView.swift in Sources */,
 				6D506D982045C5AA0011CB4B /* NSObject.swift in Sources */,
+				6D43291320D909060015C369 /* JSONDecoder.swift in Sources */,
 				6D506D922045C5AA0011CB4B /* UILabel.swift in Sources */,
 				6D506D8F2045C5AA0011CB4B /* Decimal.swift in Sources */,
 				6D506D972045C5AA0011CB4B /* Mirror.swift in Sources */,
@@ -252,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D43291520D90C770015C369 /* JSONDecoderTests.swift in Sources */,
 				6D506D6D2045C5770011CB4B /* ExtensionsPackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

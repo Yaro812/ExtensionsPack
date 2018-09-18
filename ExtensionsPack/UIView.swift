@@ -15,7 +15,7 @@ public extension UIView {
                 return activityIndicatorView
             } else {
                 let activityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-                activityIndicatorView.activityIndicatorViewStyle = .gray
+                activityIndicatorView.style = .gray
                 activityIndicatorView.color = .gray
                 activityIndicatorView.center = center
                 activityIndicatorView.hidesWhenStopped = true

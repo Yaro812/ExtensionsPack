@@ -6,7 +6,7 @@
 import Foundation
 
 public extension UUID {
-    public var bytes: [UInt8] {
+    var bytes: [UInt8] {
         let str = self.uuidString.components(separatedBy: "-").joined()
         return str.split(by: 2).compactMap { UInt8($0, radix: 16) }
     }

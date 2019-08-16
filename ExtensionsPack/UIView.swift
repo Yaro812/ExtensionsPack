@@ -8,7 +8,7 @@ import UIKit
 private var activityIndicatorViewAssociativeKey = "ActivityIndicatorViewAssociativeKey"
 
 public extension UIView {
-    public  var  indicator: UIActivityIndicatorView {
+    var  indicator: UIActivityIndicatorView {
         get {
             if let activityIndicatorView = getAssociatedObject(&activityIndicatorViewAssociativeKey)
                 as? UIActivityIndicatorView {
@@ -36,7 +36,7 @@ public extension UIView {
         }
     }
     
-    public func currentFirstResponder() -> UIResponder? {
+    func currentFirstResponder() -> UIResponder? {
         if self.isFirstResponder {
             return self
         }
@@ -48,7 +48,7 @@ public extension UIView {
         return nil
     }
     
-    public func contains(view: UIView) -> Bool {
+    func contains(view: UIView) -> Bool {
         for subview in subviews {
             if subview.contains(view: view) {
                 return true
@@ -57,7 +57,7 @@ public extension UIView {
         return false
     }
     
-    public func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
         let path = UIBezierPath(roundedRect: self.bounds,
                                 byRoundingCorners: corners,
                                 cornerRadii: CGSize(width: radius, height: radius))

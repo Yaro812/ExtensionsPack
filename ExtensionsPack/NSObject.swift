@@ -6,7 +6,7 @@
 import Foundation
 
 public extension NSObject {
-    public func setAssociatedObject(_ value: AnyObject?,
+    func setAssociatedObject(_ value: AnyObject?,
                                     associativeKey: UnsafeRawPointer,
                                     policy: objc_AssociationPolicy) {
         if let valueAsAnyObject = value {
@@ -14,7 +14,7 @@ public extension NSObject {
         }
     }
     
-    public func getAssociatedObject(_ associativeKey: UnsafeRawPointer) -> Any? {
+    func getAssociatedObject(_ associativeKey: UnsafeRawPointer) -> Any? {
         guard let valueAsType = objc_getAssociatedObject(self, associativeKey) else {
             return nil
         }

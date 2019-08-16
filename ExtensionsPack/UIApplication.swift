@@ -3,7 +3,7 @@
 import UIKit
 
 public extension UIApplication {
-    public var visibleViewController: UIViewController? {
+    var visibleViewController: UIViewController? {
         guard let rootViewController = keyWindow?.rootViewController else {
             return nil
         }

@@ -6,16 +6,16 @@
 import Foundation
 
 public extension Data {
-   public var hexString: String {
+    var hexString: String {
         return map { String(format: "%02x", $0) }.joined()
     }
     
-   public init(hex: String) {
+    init(hex: String) {
         var hex = hex
         // in case there is odd number of bytes (it may happen if we use String(int, radix: 16) )
         // we need to add 0 in front of the string
         if hex.count % 2 != 0 { hex = "0" + hex }
-
+        
         let scalars = hex.unicodeScalars
         var bytes: [UInt8] = [UInt8](repeating: 0, count: (scalars.count + 1) >> 1)
         for (index, scalar) in scalars.enumerated() {
@@ -25,13 +25,14 @@ public extension Data {
             }
             bytes[index >> 1] |= nibble
         }
-        self = Data(bytes: bytes)
+        self = Data(bytes)
     }
 }
 
 public extension Data {
-   public func scanValue<T: FixedWidthInteger>(at index: Data.Index = 0, endianess: Endianness = .littleEndian) -> T {
-        let number: T = self.subdata(in: index..<index + MemoryLayout<T>.size).withUnsafeBytes({ $0.pointee })
+    func scanValue<T: FixedWidthInteger>(at index: Data.Index = 0, endianess: Endianness = .littleEndian) -> T {
+        let sizeOfT = MemoryLayout<T>.size
+        let number: T = subdata(in: index..<index + sizeOfT).withUnsafeBytes { $0.load(as: T.self) }
         switch endianess {
         case .bigEndian:
             return number.bigEndian
@@ -39,8 +40,8 @@ public extension Data {
             return number.littleEndian
         }
     }
-
-    public enum Endianness {
+    
+    enum Endianness {
         case bigEndian
         case littleEndian
     }

@@ -6,7 +6,7 @@
 import Foundation
 
 public extension Decimal {
-    public var double: Double {
+    var double: Double {
         return NSDecimalNumber(decimal: self).doubleValue
     }
 }

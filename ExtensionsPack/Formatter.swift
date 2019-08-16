@@ -6,9 +6,9 @@
 import Foundation
 
 public extension Formatter {
-    public static var cSharp: DateFormatter { return iso8601 }
+    static var cSharp: DateFormatter { return iso8601 }
     
-    public static let iso8601: DateFormatter = {
+    static let iso8601: DateFormatter = {
         let formatter = DateFormatter()
         formatter.calendar = Calendar(identifier: .iso8601)
         formatter.locale = Locale(identifier: "en_US_POSIX")

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D43291320D909060015C369 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43291220D909060015C369 /* JSONDecoder.swift */; };
 		6D43291520D90C770015C369 /* JSONDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43291420D90C770015C369 /* JSONDecoderTests.swift */; };
 		6D506D682045C5770011CB4B /* ExtensionsPack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D506D5E2045C5770011CB4B /* ExtensionsPack.framework */; };
 		6D506D6D2045C5770011CB4B /* ExtensionsPackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D6C2045C5770011CB4B /* ExtensionsPackTests.swift */; };
@@ -37,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6D43291220D909060015C369 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		6D43291420D90C770015C369 /* JSONDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderTests.swift; sourceTree = "<group>"; };
 		6D506D5E2045C5770011CB4B /* ExtensionsPack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionsPack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D506D612045C5770011CB4B /* ExtensionsPack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionsPack.h; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				6D506D7C2045C5A80011CB4B /* UILabel.swift */,
 				6D506D8D2045C5AA0011CB4B /* UIView.swift */,
 				6D506D872045C5A90011CB4B /* UUID.swift */,
-				6D43291220D909060015C369 /* JSONDecoder.swift */,
 			);
 			path = ExtensionsPack;
 			sourceTree = "<group>";
@@ -185,7 +182,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Thorax;
 				TargetAttributes = {
 					6D506D5D2045C5770011CB4B = {
@@ -245,7 +242,6 @@
 				6D506D942045C5AA0011CB4B /* Data.swift in Sources */,
 				6D506DA32045C5AA0011CB4B /* UIView.swift in Sources */,
 				6D506D982045C5AA0011CB4B /* NSObject.swift in Sources */,
-				6D43291320D909060015C369 /* JSONDecoder.swift in Sources */,
 				6D506D922045C5AA0011CB4B /* UILabel.swift in Sources */,
 				6D506D8F2045C5AA0011CB4B /* Decimal.swift in Sources */,
 				6D506D972045C5AA0011CB4B /* Mirror.swift in Sources */,
@@ -290,6 +286,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -297,6 +294,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -331,6 +329,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -350,6 +349,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -357,6 +357,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -383,6 +384,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -407,7 +409,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -429,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.spb.thorax.ExtensionsPack;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -444,7 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.spb.thorax.ExtensionsPackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,7 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.spb.thorax.ExtensionsPackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

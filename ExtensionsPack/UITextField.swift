@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
     var decimalValue: Decimal { return Decimal(string: text ?? "0.0") ?? 0 }
     var isEmpty: Bool { return text.map { $0.isEmpty } ?? true }
 }

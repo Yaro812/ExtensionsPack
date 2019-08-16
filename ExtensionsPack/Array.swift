@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Array {
+public extension Array {
     func enumeratedDescription() -> String {
         return self.enumerated().reduce(into: "") { $0 += "\($1.0). \($1.1)\n" }
     }

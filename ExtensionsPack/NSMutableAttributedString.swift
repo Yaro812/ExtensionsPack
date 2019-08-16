@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
     func add(font: UIFont, range: NSRange?) -> NSMutableAttributedString {
         let range = range ?? NSRange(location: 0, length: self.length)
         addAttribute(.font, value: font, range: range)

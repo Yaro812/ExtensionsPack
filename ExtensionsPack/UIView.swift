@@ -65,4 +65,20 @@ public extension UIView {
         mask.path = path.cgPath
         self.layer.mask = mask
     }
+    
+    func removeRounding() {
+        self.layer.mask = nil
+    }
+    
+    var firstResponder: UIView? {
+        if self.isFirstResponder { return self }
+        for subview in subviews {
+            if let responder = subview.firstResponder { return responder }
+        }
+        return nil
+    }
+    
+    func addSubviews(_ items: UIView ...) {
+        items.forEach(addSubview)
+    }
 }

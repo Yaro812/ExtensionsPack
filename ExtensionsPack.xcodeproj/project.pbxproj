@@ -23,6 +23,10 @@
 		6D506D9F2045C5AA0011CB4B /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D892045C5A90011CB4B /* UIApplication.swift */; };
 		6D506DA32045C5AA0011CB4B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506D8D2045C5AA0011CB4B /* UIView.swift */; };
 		6D506DA52045C8120011CB4B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D506DA42045C8120011CB4B /* String.swift */; };
+		CEF73A452306CBED00267C4D /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73A442306CBED00267C4D /* UIImage.swift */; };
+		CEF73A472306CCB300267C4D /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73A462306CCB300267C4D /* Array.swift */; };
+		CEF73A492306CCEF00267C4D /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73A482306CCEF00267C4D /* NSMutableAttributedString.swift */; };
+		CEF73A4B2306CD3600267C4D /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF73A4A2306CD3600267C4D /* UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		6D506D892045C5A90011CB4B /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		6D506D8D2045C5AA0011CB4B /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		6D506DA42045C8120011CB4B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CEF73A442306CBED00267C4D /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		CEF73A462306CCB300267C4D /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		CEF73A482306CCEF00267C4D /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
+		CEF73A4A2306CD3600267C4D /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,10 @@
 				6D506D7C2045C5A80011CB4B /* UILabel.swift */,
 				6D506D8D2045C5AA0011CB4B /* UIView.swift */,
 				6D506D872045C5A90011CB4B /* UUID.swift */,
+				CEF73A442306CBED00267C4D /* UIImage.swift */,
+				CEF73A462306CCB300267C4D /* Array.swift */,
+				CEF73A482306CCEF00267C4D /* NSMutableAttributedString.swift */,
+				CEF73A4A2306CD3600267C4D /* UITextField.swift */,
 			);
 			path = ExtensionsPack;
 			sourceTree = "<group>";
@@ -240,14 +252,18 @@
 				6D506D9F2045C5AA0011CB4B /* UIApplication.swift in Sources */,
 				6D506DA52045C8120011CB4B /* String.swift in Sources */,
 				6D506D942045C5AA0011CB4B /* Data.swift in Sources */,
+				CEF73A4B2306CD3600267C4D /* UITextField.swift in Sources */,
 				6D506DA32045C5AA0011CB4B /* UIView.swift in Sources */,
 				6D506D982045C5AA0011CB4B /* NSObject.swift in Sources */,
 				6D506D922045C5AA0011CB4B /* UILabel.swift in Sources */,
 				6D506D8F2045C5AA0011CB4B /* Decimal.swift in Sources */,
 				6D506D972045C5AA0011CB4B /* Mirror.swift in Sources */,
+				CEF73A492306CCEF00267C4D /* NSMutableAttributedString.swift in Sources */,
 				6D506D9D2045C5AA0011CB4B /* UUID.swift in Sources */,
+				CEF73A472306CCB300267C4D /* Array.swift in Sources */,
 				6D506D952045C5AA0011CB4B /* Formatter.swift in Sources */,
 				6D506D962045C5AA0011CB4B /* Date.swift in Sources */,
+				CEF73A452306CBED00267C4D /* UIImage.swift in Sources */,
 				6D506D912045C5AA0011CB4B /* UIDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -380,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

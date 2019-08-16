@@ -10,6 +10,13 @@ public extension UUID {
         let str = self.uuidString.components(separatedBy: "-").joined()
         return str.split(by: 2).compactMap { UInt8($0, radix: 16) }
     }
+    
+    /**
+     returns lowercased string without dashes
+     */
+    var noDashesString: String {
+        return uuidString.lowercased().split(separator: "-").joined()
+    }
 }
 
 extension UUID: Comparable {

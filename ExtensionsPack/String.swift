@@ -38,4 +38,14 @@ public extension String {
             return String(self[startIndex..<endIndex])
         }
     }
+    
+    func htmlAttributedString() throws -> NSAttributedString {
+        let options = [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html]
+        let string = NSString(string: self)
+        guard let htmlData = string.data(using: String.Encoding.unicode.rawValue) else {
+            return NSAttributedString(string: string as String)
+        }
+        
+        return try NSAttributedString(data: htmlData, options: options, documentAttributes: nil)
+    }
 }
